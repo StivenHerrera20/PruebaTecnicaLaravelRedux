@@ -27,7 +27,7 @@ const Card = () => {
       )}
       {formData.forecastType !== 'Simple' && forecast?.forecast?.length > 0 && (
         <>
-          <h3 className="text-xl text-center font-semibold text-gray-900 dark:text-gray-200 mb-2 py-3">Previsión para los próximos días {forecast.forecast.length / 8} en {forecast.city}</h3>
+          <h3 className="text-xl text-center font-semibold text-gray-900 dark:text-gray-200 mb-2 py-3"> {forecast.forecast.length / 8 == 1 ? <> Previsión de un día en {forecast.city}</>:<>Previsión para los próximos {forecast.forecast.length / 8} días en {forecast.city}</>}</h3>
           <div className="space-y-4">
             {forecast.forecast.map((day, index) => (
               <div key={index} className="bg-neutral-200 dark:bg-slate-600 rounded-md p-4 col-end-2 flex">
