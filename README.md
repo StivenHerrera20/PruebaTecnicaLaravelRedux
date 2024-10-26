@@ -1,4 +1,4 @@
-<h1>Cómo ejecutar el proyecto frontend y backend:<h1>
+<h1>Cómo ejecutar el proyecto frontend y backend:</h1>
 Requisitos Previos: <br/>
 Node.js <br/>
 PHP <br/>
